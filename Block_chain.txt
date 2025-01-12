@@ -1,0 +1,140 @@
+Block chain: Its a decentralized system, where distributed ledger records transactions across multiple computers in a secure and immutable manner.
+where we used cryptography is heart of the blockchain. We used in crypto currencies. ledger: records keeping system that tracks.  << ---
+
+
+What are the key features of blockchain?
+Transparency, immutability, decentralization, and security.
+
+cryptographic hashing and the linking of blocks, altering a block invalidates all subsequent blocks.
+
+What are smart contracts?  << ---
+Self-executing contracts with predefined rules directly written into code on the blockchain.
+
+transactions from blocks
+blocks are added to blockchain -> miners pick up unconfirmed transactions and solve complex puzzles to create a new block.
+And then minors will decide which transactions to include.
+then blocks are added permanently.
+
+consensus algo: A mechanism used to achieve agreement on a single data value across nodes in a distributed system. Where it ensures consistency - where it maintains same copy among the network, accuracy and validates.
+types:
+pow - A consensus mechanism where miners solve complex puzzles to validate transactions and create new blocks.
+pos - instead of working with computational power, here it works based on HOW much they are willing to stack.
+dpos - Delegated Proof-of-Stake
+poi - harvesting, vesting, transaction activity, transaction network, importance score
+pbft (practical byzantine fault tolerance) - used in small organisation - 3 phases: pre-prepare, prepare, commit = 3m+1 total, 2m+1: fair
+A consensus mechanism designed to tolerate malicious nodes, ensuring consensus as long as two-thirds of nodes are honest.
+poet (proof of elapsed time) - Its a fair lottery system - each node shares certificate to intel sgx - then it receives a TIMER OBJ
+
+public:
+open to everyone, whoever want to participate
+decentralised
+maintains anomality  << ---
+no permission needed
+Ex: bitcoin, Ethereum
+algo used: pow, pos
+
+Private:
+algo: pbft, poa
+ex: Hyperledger
+
+
+What is mining in cryptocurrencies?  << ----
+The process of validating transactions and adding them to the blockchain while earning rewards in the form of cryptocurrency.
+
+
+blockheader contains:
+previous block hash, timestamp, nounce, Merkel root, version, and difficulty target
+
+
+HASH - block0 + data + nounce
+
+hash chain maintains - Merkel tree
+
+Cryptocurrency:
+A digital or virtual currency secured by cryptography and built on blockchain technology.
+
+How is Bitcoin different from Ethereum?  << ----
+Bitcoin is primarily a digital currency, while Ethereum is a platform for decentralized applications (dApps) with its own currency, Ether.
+
+bitcoin:
+first and most known cryptocurrency. uses peer to peer network and uses POW consensus algo to validate transaction.
+Its also called as digital gold.
+
+Ethereum:
+known for enabling dApps and smart contracts.
+It used Ethereum virtual machine to run contracts using solidity language.  << ----
+public and decentralised
+ERC-20: Standard for fungible tokens, where each unit is identical
+
+Litecoin:
+often called as "silver to bitcoin gold"
+used for fast transactions times - higher supply.
+used in payments, financial etc.
+
+What is a hash function?
+A cryptographic algorithm that converts input data into a fixed-size string, ensuring security and immutability.
+
+How does blockchain address scalability issues?  << ---
+Through solutions like sharding, Layer 2 protocols, and transitioning to PoS (e.g., Ethereum 2.0).
+
+
+ 
+What is the role of gas fees in Ethereum?  << ---
+Gas fees are transaction fees paid to miners for executing operations on the Ethereum blockchain.
+
+What is double-spending?
+The risk that digital currency can be spent more than once, prevented by blockchain's consensus mechanisms.
+
+
+blockchain implementation steps:  << ----
+
+define use case - pblm identification
+choose blockchain type
+design architecture
+develop smart contracts
+set up nodes and network
+test and deploy
+monitor and maintain
+iterate and improve
+
+
+assignment:
+
+Implementing the PoW:
+
+ganache - local Ethereum blockchain  << ----
+web3 js 
+solidity
+react js
+truffle - provides development env
+meta mask - a cryptocurrency wallet and interact with Ethereum blockchain. - stores private key and help for transactions. << ----
+
+
+two types of fork:
+software fork: older versions still function, and no network split
+hard fork: no compactible, split the blockchain
+
+
+improvements in blockchains:
+
+sha256 to sha 3
+RSA to elliptical curve to improve speed
+
+
+How bitcoin works ?!
+Bitcoin (BTC) is a cryptocurrency (a virtual currency) designed to act as money. 
+creating a bitcoin wallet
+make a transaction: transaction includes users public address, amount, and a digital signature created using your private key.
+then transaction verification: It broadcasts through blockchain network.
+Adding it in blockchain network.
+Mining rewards
+Transaction completion - receiver's wallet received the money.
+
+
+Explain the concept of Merkle trees and their role in blockchain.
+Merkle trees organize transaction data in a hierarchical structure using cryptographic hashes. They allow efficient and secure verification of transactions without requiring the entire blockchain.
+
+
+What is the Longest Chain Rule in blockchain?  << ----
+It is a rule in PoW where the chain with the most computational work (longest chain) is considered the valid blockchain.
+
